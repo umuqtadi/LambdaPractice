@@ -32,7 +32,7 @@ namespace LambdaPractice
 
             //print the product with the longest name to the console using the .First() extension.
 
-            //print the product with the shortest name to the console using OrderByDesceding() and the .First() extension.
+            //print the product with the shortest name to the console using the .First() extension.
 
             //print the product with the 4th shortest name to the console using an index or Skip/Take (you must convert the results to a list using .ToList()).
 
