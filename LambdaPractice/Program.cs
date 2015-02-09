@@ -28,15 +28,13 @@ namespace LambdaPractice
 
             //sort ballProducts alphabetically and print them to the console.
 
-            //add six more items to the products list using .add().
-
             //print the product with the longest name to the console using the .First() extension.
 
             //print the product with the shortest name to the console using the .First() extension.
 
-            //print the product with the 4th shortest name to the console using an index or Skip/Take (you must convert the results to a list using .ToList()).
+            //print the product with the 3rd shortest name to the console using an index or Skip/Take (you must convert the results to a list using .ToList()).  
 
-            //print the ballProduct with the 2nd longest name to the console using an index or Skip/Take (you must convert the results to a list using .ToList()).
+            //print the ballProduct with the 2nd longest name to the console using an index or Skip/Take (you must convert the results to a list using .ToList()). 
 
             //declare a variable reversedProducts and set it equal to all products ordered by the longest word first. (use the OrderByDescending() extension).
 
@@ -45,7 +43,39 @@ namespace LambdaPractice
             //print out all the products ordered by the longest word first using the OrderByDecending() extension and a foreach loop.  
             //Note: you will not use a variable to store your list
 
+            //FILL IN THE FUNCTIONS BELOW TO MAKE THE TESTS PASS
+
             Console.ReadKey();
+        }
+
+        public static string LongestName(List<string> inputList)
+        {
+            //with the input list, return the item with the longest name
+            return string.Empty;
+        }
+
+        public static string ShortestName(List<string> inputList)
+        {
+            //with the input list, return the item with the shortest name
+            return string.Empty;
+        }
+
+        public static string SecondLongestName(List<string> inputList)
+        {
+            //with the input list, return the item with the second longest name
+            return string.Empty;
+        }
+
+        public static string ThirdShortestName(List<string> inputList)
+        {
+            //with the input list, return the item with the third shortest name
+            return string.Empty;
+        }
+
+        public static List<string> BallProducts(List<string> inputList)
+        {
+            //with the input list, return a list with only the the products that contain the word ball
+            return inputList;
         }
     }
 }
