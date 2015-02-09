@@ -11,7 +11,7 @@ namespace LambdaPractice
     class Test
     {
 
-        static List<string> TestList = new List<string>() { "kayak", "baseball", "volleyball" };
+        static List<string> TestList = new List<string>() { "kayak", "baseballs", "volleyball" };
 
         [Test]
         public void Shortest()
@@ -27,19 +27,25 @@ namespace LambdaPractice
         [Test]
         public void SecondLongest()
         {
-            Assert.IsTrue(Program.SecondLongestName(TestList) == "baseball", "Not returning the second longest word.");
+            Assert.IsTrue(Program.SecondLongestName(TestList) == "baseballs", "Not returning the second longest word.");
         }
 
         [Test]
         public void ThirdShortest()
         {
-            Assert.IsTrue(Program.ThirdShortestName(TestList) == "volleyball", "Not returning the 3rd shortest word"));
+            Assert.IsTrue(Program.ThirdShortestName(TestList) == "volleyball", "Not returning the 3rd shortest word");
         }
 
         [Test]
         public void BallProducts()
         {
             Assert.IsTrue(Program.BallProducts(TestList).Count == 2, "Not returning the correct number of ball products");
+        }
+
+        [Test]
+        public void EndsInS()
+        {
+            Assert.IsTrue(Program.EndInS(TestList).Count == 1, "Not returning the correct number of items that end with the letter s");
         }
     }
 }

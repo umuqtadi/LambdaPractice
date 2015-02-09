@@ -77,5 +77,10 @@ namespace LambdaPractice
             //with the input list, return a list with only the the products that contain the word ball
             return inputList;
         }
+        public static List<string> EndInS(List<string> inputList)
+        {
+            //with the input list, return a list with only the the products that end with the letter s
+            return inputList;
+        }
     }
 }
