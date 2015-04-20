@@ -15,16 +15,31 @@ namespace LambdaPractice
 
 
             //declare a variable kayakProducts and set it equal to all products that contain the word "Kayak"
+            List<string> kayakProducts = products.Where(x => x.Contains("Kayak")).ToList();
 
             //print the kayakProducts to the console using a foreach loop.
+            foreach (string kayakThing in kayakProducts)
+            {
+                Console.WriteLine(kayakThing);
+            }
 
             //declare a variable shoeProducts and set it equal to all products that contain the word "Shoes"
+            List<string> shoeProducts = products.Where(x => x.Contains("Shoes")).ToList();
 
             //print the shoeProducts to the console using a foreach loop or string.Join().
+            foreach (string shoeStuff in shoeProducts)
+            {
+                Console.WriteLine(shoeStuff);
+            }
 
             //declare a variable ballProducts and set it equal to all the products that have ball in the name.
+            List<string> ballProducts = products.Where(x => x.Contains("ball")).ToList();
 
             //print the ballProducts to the console using a foreach loop or string.Join().
+            foreach (string ballStuff in ballProducts)
+            {
+                Console.WriteLine(ballStuff);
+            }
 
             //sort ballProducts alphabetically and print them to the console.
 
